@@ -1,0 +1,24 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "Demonstração de middlewares em Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:iot": "node mqtt-subscriber.js",
+    "simulate": "node sensor-simulator.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mqtt": "^5.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

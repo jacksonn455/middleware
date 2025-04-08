@@ -1,0 +1,14 @@
+▶️ Ordem de execução (rodar os arquivos)
+💡 Dica: deixe todos em terminais separados para observar o fluxo em tempo real.
+
+Rodar a API Express
+node api-server.js
+Escuta a porta 3000 e exibe os dados recebidos do middleware.
+
+Rodar o subscriber (middleware)
+node mqtt-subscriber.js
+Se conecta ao broker MQTT e escuta o tópico do sensor.
+
+Rodar o sensor simulator
+node sensor-simulator.js
+Publica dados de temperatura no tópico sensor/temperature a cada 5 segundos.

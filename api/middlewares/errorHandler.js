@@ -1,3 +1,4 @@
+// Exporta as rotas para serem usadas na aplicação principal
 module.exports = (err, req, res, next) => {
     console.error(err.stack); 
     // Exibe o stack trace do erro no console para debugging

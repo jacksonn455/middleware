@@ -11,16 +11,6 @@ router.get('/public', (req, res) => {
   // Qualquer usuário pode acessar esta rota
 });
 
-// Rota protegida
-router.get('/private', auth, (req, res) => {
-  res.json({ 
-    message: 'Esta é uma rota privada',
-    user: req.user 
-  });
-  // Apenas usuários autenticados podem acessar esta rota
-  // O middleware 'auth' verifica o token antes de permitir o acesso
-});
-
 // Rota para login (simulado)
 router.post('/login', (req, res) => {
   // Em um caso real, verificar credenciais no banco de dados

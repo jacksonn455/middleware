@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken'); 
 // Importa a biblioteca JSON Web Token (JWT) para autenticação
 
+// Exporta as rotas para serem usadas na aplicação principal
 module.exports = (req, res, next) => {
   const token = req.header('x-auth-token'); 
   // Obtém o token do cabeçalho da requisição

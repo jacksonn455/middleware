@@ -1,0 +1,9 @@
+🛠️ Ordem de desenvolvimento (criação dos arquivos)
+api-server.js (ou server.js, seu backend Express)
+Responsável por receber os dados que serão enviados pelo middleware.
+
+sensor-simulator.js
+Simula um sensor publicando temperatura via MQTT.
+
+mqtt-subscriber.js
+Faz o papel do middleware: escuta MQTT e envia via HTTP para a API.
